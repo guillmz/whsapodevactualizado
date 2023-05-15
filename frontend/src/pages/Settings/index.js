@@ -263,7 +263,7 @@ const Settings = () => {
             </option>
 
             <option value="button">
-              Botão
+              Boton
             </option>
 
 						<option value="list">

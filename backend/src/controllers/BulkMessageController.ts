@@ -128,7 +128,7 @@ export const index = async (req: Request, res: Response): Promise<Response> => {
           await verifyMessage(send, contactAndTicket, contact);
         } catch (err) {
           console.log(
-            `Mensagem não enviada para o contato. ${isNumberExit[0]?.jid}`
+            `Mensaje no enviado a contacto. ${isNumberExit[0]?.jid}`
           );
         }
       }, 1000 * 5);

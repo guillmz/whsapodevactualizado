@@ -281,8 +281,8 @@ export default function VerticalLinearStepper(props) {
                                       {!steps.options[index]
                                         ?.greetingMessage && (
                                         <CustomToolTip
-                                          title="A mensagem é obrigatória para seguir ao próximo nível"
-                                          content="Se a mensagem não estiver definida, o bot não seguirá adiante"
+                                          title="El mensaje es obligatorio para pasar al siguiente nivel."
+                                          content="Si el mensaje no está definido, el bot no lo seguirá."
                                         >
                                           <HelpOutlineOutlinedIcon
                                             color="secondary"

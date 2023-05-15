@@ -172,7 +172,7 @@ const QueueModal = ({ open, onClose, queueId, onEdit }) => {
       setQueue(data);
       setIsNamedEdit(null);
       setGreetingMessageEdit(null);
-      toast.success(i18n.t("Queue deleted successfully!"));
+      toast.success(i18n.t("Cola guardada con éxito!"));
     } catch (err) {
       toastError(err);
     }
@@ -187,7 +187,7 @@ const QueueModal = ({ open, onClose, queueId, onEdit }) => {
         await api.post("/queue", values);
       }
 
-      toast.success("Queue saved successfully");
+      toast.success("Cola guardada con éxito");
       handleClose();
     } catch (err) {
       toastError(err);
@@ -240,7 +240,7 @@ const QueueModal = ({ open, onClose, queueId, onEdit }) => {
 
 			setIsNamedEdit(null)
 			setGreetingMessageEdit(null)
-      toast.success("Queue saved successfully");
+      toast.success("Area guardada con éxito");
      
     } catch (err) {
       toastError(err);
@@ -501,8 +501,8 @@ const QueueModal = ({ open, onClose, queueId, onEdit }) => {
                                           {!queue.chatbots[index]
                                             ?.greetingMessage && (
                                             <CustomToolTip
-                                              title="A mensagem é obrigatória para seguir ao próximo nível"
-                                              content="Se a mensagem não estiver definida, o bot não seguirá adiante"
+                                              title="El mensaje es obligatorio para pasar al siguiente nivel."
+                                              content="Si el mensaje no está definido, el bot no lo seguirá."
                                             >
                                               <HelpOutlineOutlinedIcon
                                                 color="secondary"

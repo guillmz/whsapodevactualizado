@@ -136,7 +136,7 @@ const QueueSelect = ({ selectedQueueIds, onChange }) => {
 	return (
 		<div style={{ marginTop: 6 }}>
 			<FormControl fullWidth margin="dense" variant="outlined">
-				<InputLabel>Selecione una coneccion*</InputLabel>
+				<InputLabel>Selecione una conexion*</InputLabel>
 				<Select
 					// multiple
 					labelWidth={180}

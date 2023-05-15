@@ -98,7 +98,7 @@ const Dashboard = () => {
 							</Typography>
 							<Grid item>
 								<Typography component="h1" variant="h4">
-									{GetTickets("closed", "true", "false")}
+									{GetTickets("Atendido", "true", "false")}
 								</Typography>
 							</Grid>
 						</Paper>

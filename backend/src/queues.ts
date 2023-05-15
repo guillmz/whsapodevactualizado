@@ -26,7 +26,7 @@ export const sendScheduledMessages = new Queue(
 );
 
 export function startQueueProcess() {
-  logger.info("Iniciando processamento de filas");
+  logger.info("Comenzando el procesamiento de la cola");
 
   messageQueue.process("SendMessage", async job => {
     try {
@@ -70,7 +70,7 @@ export function startQueueProcess() {
             { schedule },
             { delay: 40000 }
           );
-          logger.info(`Disparo agendado para: ${schedule.contact.name}`);
+          logger.info(`tiro programado para: ${schedule.contact.name}`);
         });
       }
     } catch (e: any) {
@@ -88,7 +88,7 @@ export function startQueueProcess() {
     try {
       scheduleRecord = await Schedule.findByPk(schedule.id);
     } catch (e) {
-      logger.info(`Erro ao tentar consultar agendamento: ${schedule.id}`);
+      logger.info(`Error al intentar consultar horario: ${schedule.id}`);
     }
 
     try {
@@ -104,7 +104,7 @@ export function startQueueProcess() {
         status: "ENVIADA"
       });
 
-      logger.info(`Mensagem agendada enviada para: ${schedule.contact.name}`);
+      logger.info(`Mensaje programado enviado a: ${schedule.contact.name}`);
       sendScheduledMessages.clean(15000, "completed");
     } catch (e: any) {
       await scheduleRecord?.update({

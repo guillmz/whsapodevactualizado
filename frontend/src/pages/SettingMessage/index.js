@@ -138,7 +138,7 @@ const ConfigMessage = () => {
   return (
     <MainContainer className={classes.mainContainer}>
       <MainHeader>
-        <Title>Configuração de envio de mensagem.</Title>
+        <Title>Configuración de envío de mensajes.</Title>
       </MainHeader>
       <Paper className={classes.mainPaper} variant="outlined">
         <SelectConection
@@ -195,7 +195,7 @@ const ConfigMessage = () => {
             fullWidth
             className={classes.margin}
           >
-            <FormLabel component="legend">Configurações adicionais</FormLabel>
+            <FormLabel component="legend">Configuraciones adicionales</FormLabel>
             <FormGroup>
               <FormControlLabel
                 control={
@@ -205,7 +205,7 @@ const ConfigMessage = () => {
                     name="contact"
                   />
                 }
-                label="Enviar só para os meus contatos"
+                label="Enviar solo a mis contactos"
               />
               <FormControlLabel
                 control={
@@ -215,7 +215,7 @@ const ConfigMessage = () => {
                     name="photo"
                   />
                 }
-                label="Enviar mensagem só para os numeros que tem foto"
+                label="Envía un mensaje solo a los números que tienen foto"
               />
               <FormControlLabel
                 control={
@@ -225,14 +225,14 @@ const ConfigMessage = () => {
                     name="random"
                   />
                 }
-                label="Enviar em orderm aleatoria  "
+                label="Enviar en orden aleatorio  "
               />
             </FormGroup>
           </FormControl>
 
           <FormControl fullWidth className={classes.margin}>
             <InputLabel htmlFor="standard-adornment-amount">
-              Incluir mensagem no final com opção de não receber mais (opt-out)
+              Incluir mensaje al final con opción a no recibir más (opt-out)
             </InputLabel>
             <Input
               id="standard-adornment-amount"
@@ -255,7 +255,7 @@ const ConfigMessage = () => {
               handleSaveSettings();
             }}
           >
-            Salvar configurações
+            Guardar Configuracion
           </Button>
         </div>
       </Paper>

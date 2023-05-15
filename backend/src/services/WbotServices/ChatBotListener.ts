@@ -333,7 +333,7 @@ export const sayChatbot = async (
     if (!choosenQueue?.greetingMessage) {
       await DeleteDialogChatBotsServices(contact.id);
       return;
-    } // nao tem mensagem de boas vindas
+    } // sin mensaje de bienvenida
     if (choosenQueue) {
       if (choosenQueue.isAgent) {
         try {
@@ -374,7 +374,7 @@ export const sayChatbot = async (
     if (!choosenQueue.greetingMessage) {
       await DeleteDialogChatBotsServices(contact.id);
       return;
-    } // nao tem mensagem de boas vindas
+    } // sin mensaje de bienvenida
     if (choosenQueue) {
       if (choosenQueue.isAgent) {
         const getUserByName = await User.findOne({

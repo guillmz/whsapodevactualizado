@@ -106,7 +106,7 @@ export const RenderForm = ({
 
               <Field
                 as={TextField}
-                label="Dados"
+                label="Datos"
                 type="csv"
                 multiline
                 minRows={5}
@@ -140,7 +140,7 @@ export const RenderForm = ({
                 variant="contained"
                 className={classes.btnWrapper}
               >
-                Enviar Mensagem
+                Enviar Mensaje
                 {isSubmitting && (
                   <CircularProgress
                     size={24}
@@ -310,7 +310,7 @@ const Contacts = () => {
   return (
     <MainContainer className={classes.mainContainer}>
       <MainHeader>
-        <Title>Envio de Mensagem</Title>
+        <Title>Envio de Mensaje</Title>
       </MainHeader>
       <Paper className={classes.mainPaper} variant="outlined">
         <RenderForm

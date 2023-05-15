@@ -158,9 +158,9 @@ export const getBodyMessage = (msg: proto.IWebMessageInfo): string | null => {
     if (!objKey) {
       logger.warn(`#### Nao achou o type 152: ${type}
 ${JSON.stringify(msg)}`);
-      Sentry.setExtra("Mensagem", { BodyMsg: msg.message, msg, type });
+      Sentry.setExtra("Mensaje", { BodyMsg: msg.message, msg, type });
       Sentry.captureException(
-        new Error("Novo Tipo de Mensagem em getTypeMessage")
+        new Error("Nuevo tipo de mensaje en getTypeMessage")
       );
     }
     return types[type];
@@ -472,8 +472,8 @@ const isValidMsg = (msg: proto.IWebMessageInfo): boolean => {
     if (!ifType) {
       logger.warn(`#### Nao achou o type em isValidMsg: ${msgType}
 ${JSON.stringify(msg?.message)}`);
-      Sentry.setExtra("Mensagem", { BodyMsg: msg.message, msg, msgType });
-      Sentry.captureException(new Error("Novo Tipo de Mensagem em isValidMsg"));
+      Sentry.setExtra("Mensaje", { BodyMsg: msg.message, msg, msgType });
+      Sentry.captureException(new Error("Nuevo tipo de mensaje en isValidMsg"));
     }
 
     return !!ifType;
