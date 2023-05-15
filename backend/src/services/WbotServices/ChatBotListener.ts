@@ -83,7 +83,7 @@ const sendDialog = async (
 
       const optionsBack =
         options.length > 0
-          ? `${options}\n*#* Voltar para o menu principal`
+          ? `${options}\n*#* Volver al menu principal`
           : options;
 
       if (options.length > 0) {
@@ -149,7 +149,7 @@ const sendDialog = async (
 
         const listMessage = {
           text: formatBody(`\u200e${choosenQueue.greetingMessage}`, contact),
-          buttonText: "Escolja una opcion",
+          buttonText: "Escoja una opcion",
           sections
         };
 
